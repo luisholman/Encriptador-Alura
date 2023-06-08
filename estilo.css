@@ -1,9 +1,9 @@
 
 *{
-    background-color: #F3F5FC;  
+    background-color: #89d8e6;  
 }
 .logo-alura{
-    width: 80px;
+    width: 50px;
     margin-top: 10px;
 }
 .container{
@@ -13,14 +13,14 @@
     text-align: center;
 }
 .container-entrada{
-    margin: 30px;
+    margin:0 30px;
 }
 .txt-entrada{
     background-color: #e9ecf8;
     color: #0A3871;
     font-size: 1.5rem;
     height: 200px;
-    width: 300px;
+    width: 200px;
     border:none;
     resize: none;
 }
@@ -33,23 +33,40 @@
     text-align: start;
 }
 .btn{
-    padding: 18px;
-    width: 240px;
+    padding: 15px;
+    width: 180px;
     height: 67px;
-    border-radius: 24px;
     font-size: 1.5rem;
     margin: 10px;
     cursor: pointer;
+    border: none;
 }
 #btn_encriptar{
     color: #ffff;
     background-color: #0A3871;
+    border: 2px solid transparent;
+}
+
+#btn_encriptar:hover{
+    color: #0A3871;
+    background-color: #fff;
+    border: 2px solid #0A3871;
 
 }
 #btn_desencriptar{
     color: #0A3871;
-    background-color: #D8DFE8;
+    background-color: #fff;
+    border: 2px solid #0A3871;
 }
+
+#btn_desencriptar:hover{
+    color: #fff;
+    background-color: #0A3871;
+    border: 2px solid transparent;
+}
+
+
+
 .txt-salida{ 
     height: 200px;
     width: 300px;
@@ -63,10 +80,16 @@
     color: #495057;
 }
 #copia {
-    border: 1px solid #0A3871;
-    border-radius: 2rem;
+    border: 2px solid #0A3871;
     color: #0A3871;
     cursor: pointer;   
+}
+
+#copia:hover {
+    border: 2px solid #0A3871;
+    background: #0A3871;
+    color: #fff;
+      
 }
 @media  (min-width:680px) and (max-width:990px)  {
     .logo-alura{
@@ -89,6 +112,20 @@
        margin-bottom: 50px;
     }
 
+    #copia {
+        position: absolute;
+        top: 119%;
+        left: 35%;
+    }
+
+    .txt-salida{ 
+        height: 470px;
+        width: 400px;
+        background-image: url('./imagenes/Muñeco.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 }
  .txt-salida{ 
     height: 400px;
@@ -100,8 +137,9 @@
         }
         .txt-entrada{
             font-size: 2rem;
-            height: 400px;
+            height: 200px;
             width: 520px;
+            
         }
        
         .aviso{
@@ -112,16 +150,18 @@
             margin: 50px;
         }
         .txt-salida{ 
-            height: 670px;
+            height: 390px;
             width: 400px;
             background-image: url('./imagenes/Muñeco.png');
             background-repeat: no-repeat;
             background-position: center;
         }
+
+        
         #copia {
             position: absolute;
-            top: 85%;
-            left: 65%;
+            top: 60%;
+            left: 63%;
         }
     }
 @media (min-width:1500px) and (max-width:3000px){
@@ -130,8 +170,9 @@
     }
     .txt-entrada{
         font-size: 2rem;
-        height: 400px;
+        height: 300px;
         width: 520px;
+        
     }
    
     .aviso{

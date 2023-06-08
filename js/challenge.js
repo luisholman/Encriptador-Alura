@@ -86,4 +86,4 @@ var  crearbuttonCopiar= `<button id="copia" class="btn">Copiar</button>`
     container_copia.innerHTML=crearbuttonCopiar;
 
  var  buttonCopiar=document.querySelector('#copia');
-    buttonCopiar.addEventListener('click', copiar)
+    buttonCopiar.addEventListener('click', copia)
